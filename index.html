@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Operation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadData()">
+    <div class="container">
+        <div class="formContainer">
+            <form class="createForm">
+                <input type="text" class="name" placeholder="Name" required>
+                <input type="email" class="email" placeholder="Email" required>
+                <button type="submit" onclick="add()">Create User</button>
+            </form>
+            <form class="updateForm">
+                <input type="text" class="id" hidden>
+                <input type="text" class="uname" placeholder="name" required>
+                <input type="email" class="uemail" placeholder="Email" required>
+                <button type="button" onclick="update()">Update User</button>
+            </form>
+<div class="addDiv">
+    <button onclick="create()">Add User</button>
+</div>
+            <table>
+                <thead>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </thead>
+                <tbody class="data-table">
+
+                </tbody>
+            </table>
+        </div>
+        <!-- <div>
+            <input type="text" id="searchInput" placeholder="Search by name or email">
+            <button onclick="search()">Search</button>
+        </div> -->
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

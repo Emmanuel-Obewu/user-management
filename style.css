@@ -1,0 +1,84 @@
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(beautiful-background-td7gsxerv3ecl20h.jpg) no-repeat;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    /* background-color: rgb(2, 17, 30); */
+}
+
+.formContainer {
+    margin-top: 20px;
+    width: 40vw;
+    border-radius: 10px;
+    height: 80vh;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid grey;
+}
+
+form button {
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.addDiv {
+    width: 100%;
+    padding: 10px 0px 0px 90px;
+}
+
+.addDiv button {
+    padding: 8px;
+    background-color: green;
+    color: white;
+    border-radius: 7px;
+}
+
+table button{
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.addDiv button:hover{
+    background-color: rgb(2, 58, 2);
+}
+table {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.updateForm, .createForm{
+    display: none;
+}
+
+table .edit {
+    background-color: blue;
+    color: white;
+}
+
+table .delete {
+    background-color: rgb(216, 25, 60);
+    color: white;
+}
